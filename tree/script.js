@@ -44,7 +44,6 @@ const drawTree = (startX, startY, len, angle, branchWidth, color1, color2) => {
 
     ctx.restore();
 }
-drawTree(canvas.width / 2, canvas.height - 50, 110, 0, 25, 'brown', 'lightpink');
 
 const generateRandomTree = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -56,7 +55,9 @@ const generateRandomTree = () => {
     const branchWidth = Math.floor((Math.random() * 100) + 1);
     const color1 = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
     const color2 = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+    generateButton.style.background = color1;
     drawTree(centerPointX, startY, len, angle, branchWidth, color1, color2);
 }
 
 generateButton.addEventListener('click', generateRandomTree);
+generateRandomTree();
