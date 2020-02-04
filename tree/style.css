@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.generate {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 30px;
+  border-radius: 50px;
+  width: 300px;
+  background: brown;
+  color: black;
+  overflow: hidden;
+  font-size: 20px;
+}
